@@ -1,0 +1,630 @@
+## 1.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .business-card {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        width: fit-content;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .business-card h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #333333;
+      }
+
+      .business-card p {
+        margin: 0;
+        margin-bottom: 10px;
+        color: #666666;
+      }
+
+      .business-card a {
+        display: inline-block;
+        margin-right: 10px;
+        color: #3498db;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      .business-card a:hover {
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <h1>John Doe</h1>
+        <p id="job">Web Developer</p>
+        <p id="contact">Contact: johndoe@example.com</p>
+        <a id="linkedin" href="https://www.linkedin.com/in/johndoe">LinkedIn</a>
+        <a id="github" href="https://github.com/johndoe">GitHub</a>
+    </div>
+</body>
+</html>
+
+## 2.html
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card Flip</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .card {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        perspective: 600px;
+      }
+
+      .card-front, .card-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border: 1px solid #cccccc;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: #0000FF;
+        color: white;
+        transition: transform 0.6s;
+      }
+
+      .card-front {
+        transform: rotateY(0deg);
+      }
+
+      .card-back {
+        transform: rotateY(180deg);
+      }
+
+      .card:hover .card-front {
+        transform: rotateY(180deg);
+      }
+
+      .card:hover .card-back {
+        transform: rotateY(360deg);
+      }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-front">Front Side</div>
+        <div class="card-back">Back Side</div>
+    </div>
+</body>
+</html>
+
+## 3.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Timeline</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .timeline {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            background-color: white;
+            border-left: 4px solid #3498db;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item h2 {
+            margin: 0 0 10px;
+            color: #3498db;
+            font-size: 18px;
+        }
+
+        .timeline-item p {
+            margin: 5px;
+            color: #555555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="timeline-item" id="item1">
+            <h2 id="title1">Project Initiation</h2>
+            <p id="date1">January 1, 2024</p>
+            <p id="description1">Initial project planning and team formation.</p>
+        </div>
+
+        <div class="timeline-item" id="item2">
+            <h2 id="title2">Requirements Gathering</h2>
+            <p id="date2">February 1, 2024</p>
+            <p id="description2">Collecting all the necessary project requirements.</p>
+        </div>
+
+        <div class="timeline-item" id="item3">
+            <h2 id="title3">Design Phase</h2>
+            <p id="date3">March 1, 2024</p>
+            <p id="description3">Creating wireframes and design prototypes.</p>
+        </div>
+
+        <div class="timeline-item" id="item4">
+            <h2 id="title4">Development</h2>
+            <p id="date4">April 1, 2024</p>
+            <p id="description4">Coding and implementation of the project.</p>
+        </div>
+
+        <div class="timeline-item" id="item5">
+            <h2 id="title5">Testing & QA</h2>
+            <p id="date5">May 1, 2024</p>
+            <p id="description5">Conducting tests to ensure quality and performance.</p>
+        </div>
+
+        <div class="timeline-item" id="item6">
+            <h2 id="title6">Project Launch</h2>
+            <p id="date6">June 1, 2024</p>
+            <p id="description6">Official launch of the project.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+## 4.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Panel</title>
+    <style>
+      body {
+        margin: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      .toggle {
+        display: none;
+      }
+
+      .collapsible-header {
+        display: block;
+        padding: 15px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      .collapsible-content {
+        display: none;
+        padding: 15px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin-top: 10px;
+      }
+
+      .toggle:checked + .collapsible-header + .collapsible-content {
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggle" class="toggle">
+    <label for="toggle" class="collapsible-header">Click to Show/Hide Content</label>
+    <div class="collapsible-content">
+        <p>This content can be shown or hidden when you click the label above</p>
+    </div>
+</body>
+</html>
+
+## 5.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #008080;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #008080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #004d4d;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
+
+## 6.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .services-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #008080;
+            color: white;
+        }
+
+        .services-section h2 {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-box {
+            background-color: white;
+            color: black;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-box h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .service-box p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box" id="box1">
+                <h3 id="service1">Service 1</h3>
+                <p id="description1">Description of service 1.</p>
+            </div>
+            <div class="service-box" id="box2">
+                <h3 id="service2">Service 2</h3>
+                <p id="description2">Description of service 2.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+## 7.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .pricing-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .plan {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .plan h2 {
+            margin-top: 0;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #333333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="plan" id="Basicplan">
+            <h2 id="plan1">Basic</h2>
+            <p class="price" id="Basicprice">$10/month</p>
+            <ul id="Basic">
+                <li id="BasicFeature1">Feature 1</li>
+                <li id="BasicFeature2">Feature 2</li>
+                <li id="BasicFeature3">Feature 3</li>
+            </ul>
+        </div>
+        <div class="plan" id="proplan">
+            <h2 id="plan2">Pro</h2>
+            <p class="price" id="proprice">$20/month</p>
+            <ul id="pro">
+                <li id="proFeature1">Feature 1</li>
+                <li id="proFeature2">Feature 2</li>
+                <li id="proFeature3">Feature 3</li>
+            </ul>
+        </div>
+        <div class="plan" id="Premiumplan">
+            <h2 id="plan3">Premium</h2>
+            <p class="price" id="Premiumprice">$30/month</p>
+            <ul id="Premium">
+                <li id="PremiumFeature1">Feature 1</li>
+                <li id="PremiumFeature2">Feature 2</li>
+                <li id="PremiumFeature3">Feature 3</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+## 8.html
+
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .grid-item {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item" id="item1">Item 1</div>
+      <div class="grid-item" id="item2">Item 2</div>
+      <div class="grid-item" id="item3">Item 3</div>
+      <div class="grid-item" id="item4">Item 4</div>
+      <div class="grid-item" id="item5">Item 5</div>
+      <div class="grid-item" id="item6">Item 6</div>
+    </div>
+  </body>
+</html>
+
+## 9.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .menu {
+            position: relative;
+            width: 200px;
+        }
+
+        .menu-items {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-items li {
+            border-bottom: 1px solid #0062cc;
+        }
+
+        .menu-items li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-items a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .menu-items a:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu-label {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-toggle:checked ~ .menu-items {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-label">Menu</label>
+        <ul class="menu-items">
+            <li id="Home"><a href="#Home">Home</a></li>
+            <li id="About"><a href="#About">About</a></li>
+            <li id="Services"><a href="#Services">Services</a></li>
+            <li id="Contact"><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
