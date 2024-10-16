@@ -1,0 +1,516 @@
+## 1.HTML
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+
+        .testimonials {
+            background-color: #ffffff;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #007bff;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #007bff;
+        }
+
+        .testimonial-card {
+            background-color: #f9f9f9;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #555555;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-author {
+            text-align: right;
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-card" id="card1">
+            <p class="testimonial-text" id="experience1">"This service was amazing! I highly recommend it to everyone looking for quality and professionalism."</p>
+            <p class="testimonial-author" id="client1">- John Doe</p>
+        </div>
+        <div class="testimonial-card" id="card2">
+            <p class="testimonial-text" id="experience2">"I had a great experience. The team was very helpful and the results were excellent."</p>
+            <p class="testimonial-author" id="client2">- Jane Smith</p>
+        </div>
+        <div class="testimonial-card" id="card3">
+            <p class="testimonial-text" id="experience3">"Fantastic! The best decision I made for my project. I will definitely use this service again."</p>
+            <p class="testimonial-author" id="client3">- Emily Johnson</p>
+        </div>
+    </section>
+</body>
+</html>
+
+
+## 2.html
+ <!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Bubble</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .speech-bubble {
+        font-family: Arial, sans-serif;
+        position: relative;
+        background-color: #3498db;
+        border-radius: 50px;
+        padding: 20px;
+        color: white;
+        max-width: 300px;
+      }
+
+      .speech-bubble::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #3498db;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="speech-bubble">
+      Hello! I am a speech bubble.
+    </div>
+  </body>
+</html>
+
+## 3.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .coming-soon-container {
+            text-align: center;
+        }
+
+        .coming-soon-container h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .coming-soon-container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        
+        .subscribe-form {
+            display: inline-block;
+        }
+
+        .subscribe-form label {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .subscribe-form input[type="email"] {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .subscribe-form button {
+            padding: 8px 15px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon-container">
+        <h1>Coming Soon</h1>
+        <p>We're launching soon, Stay tuned!</p>
+        <form class="subscribe-form">
+            <label for="email">Subscribe for updates</label>
+            <input type="email" id="email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+## 4.html<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Text</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #333333;
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+
+      #glow {
+        font-size: 3em;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 
+          0 0 10px #ffffff, 
+          0 0 20px #f00000, 
+          0 0 30px #f00000, 
+          0 0 40px #f00000, 
+          0 0 50px #f00000, 
+          0 0 60px #f00000, 
+          0 0 70px #f00000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="glow">HTML and CSS</h1>
+  </body>
+</html>
+
+
+## 5.html
+
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .invitation-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+      }
+
+      h1 {
+        color: white;
+        background-color: #7D3C98;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .event-details h2 {
+        color: #7D3C98;
+      }
+
+      .rsvp-form label {
+        color: #7D3C98;
+        display: block;
+        margin-top: 10px;
+      }
+
+      .rsvp-form input[type="text"], 
+      .rsvp-form input[type="email"] {
+        width: 90%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+      }
+
+      .rsvp-form button {
+        background-color: #7D3C98;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .rsvp-form button:hover {
+        background-color: #5e2a7b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="invitation-container">
+      <h1>You're Invited!</h1>
+      <div class="event-details">
+        <h2>Event Details</h2>
+        <p id="date">Date: December 31, 2024</p>
+        <p id="time">Time: 7:00 PM</p>
+        <p id="loc">Location: 123 Event Street, City</p>
+      </div>
+      <form class="rsvp-form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+## 6.html
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent Popup</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+          margin: 20px;
+          font-family: Arial, sans-serif;
+      }
+
+      #cookie-bar {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: #333333;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      #cookie-text {
+          margin-right: 10px;
+      }
+
+      #got-it-btn {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          padding: 5px 15px;
+          cursor: pointer;
+          font-size: 14px;
+      }
+    </style>
+</head>
+<body>
+    <div id="cookie-bar">
+        <span id="cookie-text">This website uses cookies to ensure you get the best experience on our website.</span>
+        <button id="got-it-btn">Got it!</button>
+    </div>
+</body>
+</html>
+
+## 7.html
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Files</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background: linear-gradient(to right, #f3e5f5, #e3f2fd, #e0f2f1);
+      }
+
+      .upload-container {
+          background-color: white;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          text-align: center;
+      }
+
+      .upload-area {
+          border: 2px dashed #cccccc;
+          border-radius: 5px;
+          padding: 20px;
+          cursor: pointer;
+      }
+
+      .choose-files-btn {
+          background-color: #f0f0f0;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          color: #666666;
+          font-size: 14px;
+          cursor: pointer;
+      }
+
+      .upload-text {
+          color: #999999;
+          margin-left: 10px;
+          font-size: 14px;
+      }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <div class="upload-area">
+            <button class="choose-files-btn">CHOOSE FILES</button>
+            <span class="upload-text">or drop files here</span>
+        </div>
+    </div>
+</body>
+</html>
+
+## 8.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f0f0f0;
+      }
+
+      .review-card {
+          width: 300px;
+          padding: 20px;
+          background-color: #ffffff;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          text-align: center;
+      }
+
+      .review-heading {
+          font-size: 24px;
+          margin-bottom: 20px;
+          color: #343a40;
+      }
+
+      .review-content {
+          background-color: #fff9e6;
+          padding: 15px;
+          border-left: 5px solid #ffa500;
+          border-radius: 5px;
+          text-align: left;
+      }
+
+      .book-title {
+          font-size: 20px;
+          color: #007bff;
+          margin-bottom: 10px;
+      }
+
+      .author, .review {
+          margin: 5px 0;
+      }
+
+      .author strong {
+          color: #007bff;
+      }
+
+      .review strong {
+          color: #6f42c1;
+      }
+
+      p {
+          margin: 0;
+          font-size: 14px;
+          color: #333333;
+      }
+    </style>
+</head>
+<body>
+    <div class="review-card">
+        <h2 class="review-heading">Book Review</h2>
+        <div class="review-content">
+            <h3 class="book-title">Book Title</h3>
+            <p class="author">
+                <strong id="authorheading">Author:</strong> Author Name
+            </p>
+            <p class="review">
+                <strong id="reviewheading">Review:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna nec eros convallis facilisis.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
