@@ -1,0 +1,651 @@
+## 1.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f0f0f0;
+      }
+
+      .review-card {
+          width: 300px;
+          padding: 20px;
+          background-color: #ffffff;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          text-align: center;
+      }
+
+      .review-heading {
+          font-size: 24px;
+          margin-bottom: 20px;
+          color: #343a40;
+      }
+
+      .review-content {
+          background-color: #fff9e6;
+          padding: 15px;
+          border-left: 5px solid #ffa500;
+          border-radius: 5px;
+          text-align: left;
+      }
+
+      .book-title {
+          font-size: 20px;
+          color: #007bff;
+          margin-bottom: 10px;
+      }
+
+      .author, .review {
+          margin: 5px 0;
+      }
+
+      .author strong {
+          color: #007bff;
+      }
+
+      .review strong {
+          color: #6f42c1;
+      }
+
+      p {
+          margin: 0;
+          font-size: 14px;
+          color: #333333;
+      }
+    </style>
+</head>
+<body>
+    <div class="review-card">
+        <h2 class="review-heading">Book Review</h2>
+        <div class="review-content">
+            <h3 class="book-title">Book Title</h3>
+            <p class="author">
+                <strong id="authorheading">Author:</strong> Author Name
+            </p>
+            <p class="review">
+                <strong id="reviewheading">Review:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna nec eros convallis facilisis.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+## 2.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listing</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          background-color: #f4f4f4;
+        }
+
+        .job-listing {
+          max-width: 600px;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        h1 {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .job {
+          background-color: white;
+          border: 1px solid #dddddd;
+          padding: 20px;
+          margin-bottom: 20px;
+          border-radius: 4px;
+        }
+
+        .job h2 {
+          margin-top: 0;
+          font-size: 1.5em;
+          color: #333333;
+        }
+
+        .job p {
+          margin: 10px 0;
+          color: #555555;
+        }
+
+        button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <div class="job-listing">
+        <h1>Job Openings</h1>
+        <div class="job" id="job1">
+            <h2 id="title1">Job Title 1</h2>
+            <p id="location1"><strong id="loc1">Location:</strong> City, State</p>
+            <p id="description1">Description of job 1.</p>
+            <button id="apply1">Apply Now</button>
+        </div>
+        <div class="job" id="job2">
+            <h2 id="title2">Job Title 2</h2>
+            <p id="location2"><strong id="loc2">Location:</strong> City, State</p>
+            <p id="description2">Description of job 2.</p>
+            <button id="apply2">Apply Now</button>
+        </div>
+    </div>
+</body>
+</html>
+
+## 3.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        .feedback-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .feedback-form h1 {
+            text-align: center;
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .feedback-form input {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .feedback-form textarea {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .feedback-form button {
+            display: block;
+            width: 90%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .feedback-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form class="feedback-form">
+        <h1>Feedback Form</h1>
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="feedback">Your Feedback</label>
+        <textarea id="feedback" name="feedback"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+## 4.html
+<!DOCTYPE html> 
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .newsletter {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .newsletter h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .newsletter form {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .newsletter label {
+            font-size: 1em;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            width: 91%;
+        }
+
+        .newsletter button {
+            padding: 10px;
+            font-size: 1em;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+## 5.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            background-color: #333333;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <ul>
+            <li id="aboutli"><a href="#about">About</a></li>
+            <li id="projectsli"><a href="#projects">Projects</a></li>
+            <li id="contactli"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+  <section id="aboutme">
+      <h2 id="about">About Me</h2>
+      <p id="aboutDescription">Information about me goes here.</p>
+  </section>
+  
+  <section id="projectsection">
+      <h2 id="projects">My Projects</h2>
+      <div class="project" id="project1">
+          <h3 id="projectHeading1">Project 1</h3>
+          <p id="projectDescription1">Description of project 1.</p>
+      </div>
+      <div class="project" id="project2">
+          <h3 id="projectHeading2">Project 2</h3>
+          <p id="projectDescription2">Description of project 2.</p>
+      </div>
+  </section>
+  
+  <section id="contactus">
+      <h2 id="contact">Contact Me</h2>
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <button type="submit">Send</button>
+      </form>
+  </section>
+</body>
+</html>
+
+## 6.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            flex: 1;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-content {
+            padding: 15px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .read-more {
+            display: block;
+            text-align: right;
+            padding: 10px 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card" id="card1">
+            <div class="card-title" id="cardTitle1">Card Title 1</div>
+            <div class="card-content" id="cardContent1">Content for the first card. This could be any information you want to display.</div>
+            <a href="#card1" class="read-more" id="cardReadmore1">Read More</a>
+        </div>
+        
+        <div class="card" id="card2">
+            <div class="card-title" id="cardTitle2">Card Title 2</div>
+            <div class="card-content" id="cardContent2">Content for the second card. More details can be added here.</div>
+            <a href="#card2" class="read-more" id="cardReadmore2">Read More</a>
+        </div>
+        
+        <div class="card" id="card3">
+            <div class="card-title" id="cardTitle3">Card Title 3</div>
+            <div class="card-content" id="cardContent3">Content for the third card. More details can be added here.</div>
+            <a href="#card3" class="read-more" id="cardReadmore3">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
+
+## 7.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+
+        .workout {
+            background-color: #ffffff;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .workout p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+        <nav>
+            <ul>
+                <li id="Home"><a href="#Home">Home</a></li>
+                <li id="Workouts"><a href="#Workouts">Workouts</a></li>
+                <li id="Nutrition"><a href="#Nutrition">Nutrition</a></li>
+                <li id="Contact"><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="workout" id="workout1">
+            <h2 id="workoutHeading1">Workout 1</h2>
+            <p id="workoutDescription1">Description of workout 1.</p>
+        </section>
+        <section class="workout" id="workout2">
+            <h2 id="workoutHeading2">Workout 2</h2>
+            <p id="workoutDescription2">Description of workout 2.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fitness Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
