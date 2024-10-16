@@ -1,0 +1,557 @@
+## 1.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Tabs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .tab-container {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .tab-container input[type="radio"] {
+      display: none;
+    }
+
+    .tab-btn {
+      padding: 15px;
+      cursor: pointer;
+      background-color: #f1f1f1;
+      border: 1px solid #dddddd;
+      text-align: left;
+      transition: background-color 0.3s, color 0.3s;
+      flex: 1;
+    }
+
+    .tab-btn:hover {
+      background-color: #dddddd;
+    }
+
+    .tab-content {
+      display: none;
+      flex: 3;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    #tab1:checked ~ .tab-content#content1 {
+      display: block;
+    }
+
+    #tab2:checked ~ .tab-content#content2 {
+      display: block;
+    }
+
+    #tab3:checked ~ .tab-content#content3 {
+      display: block;
+    }
+
+    #tab4:checked ~ .tab-content#content4 {
+      display: block;
+    }
+
+    .tab-content h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="tab-container">
+    <!-- Tabs -->
+    <input type="radio" id="tab1" name="tab" checked>
+    <label for="tab1" class="tab-btn">Home</label>
+    <input type="radio" id="tab2" name="tab">
+    <label for="tab2" class="tab-btn">Services</label>
+    <input type="radio" id="tab3" name="tab">
+    <label for="tab3" class="tab-btn">Contact</label>
+    <input type="radio" id="tab4" name="tab">
+    <label for="tab4" class="tab-btn">About</label>
+
+    <!-- Tab Contents -->
+    <div class="tab-content" id="content1">
+      <h2>Home</h2>
+      <p>Welcome to our website!</p>
+    </div>
+
+    <div class="tab-content" id="content2">
+      <h2>Services</h2>
+      <p>We offer a variety of services.</p>
+    </div>
+
+    <div class="tab-content" id="content3">
+      <h2>Contact</h2>
+      <p>Get in touch with us.</p>
+    </div>
+
+    <div class="tab-content" id="content4">
+      <h2>About</h2>
+      <p>Learn more about our company.</p>
+    </div>
+  </div>
+</body>
+</html>
+
+## 2.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        .feedback-form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .feedback-form h1 {
+            text-align: center;
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .feedback-form input {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .feedback-form textarea {
+            width: 90%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .feedback-form button {
+            display: block;
+            width: 90%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .feedback-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form class="feedback-form">
+        <h1>Feedback Form</h1>
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="feedback">Your Feedback</label>
+        <textarea id="feedback" name="feedback"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+## 3.html
+
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skewed Sections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .skewed-section-1 {
+            background: #3498db;
+            transform: skewY(-10deg);
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .skewed-section-2 {
+            background: #e74c3c;
+            transform: skewY(10deg);
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .skewed-section-3 {
+            background: #2ecc71;
+            transform: skewY(-10deg);
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .content {
+            transform: skewY(10deg);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="skewed-section-1">
+      <div class="content" id="skew1">
+        <h1 id="skewTitle1">Welcome to My Website</h1>
+        <p id="skewDescription1">This is the first skewed section.</p>
+      </div>
+    </section>
+    <section class="skewed-section-2">
+      <div class="content" id="skew2">
+        <h1 id="skewTitle2">About Us</h1>
+        <p id="skewDescription2">This is the second skewed section.</p>
+      </div>
+    </section>
+    <section class="skewed-section-3">
+      <div class="content" id="skew3">
+        <h1 id="skewTitle3">Contact Us</h1>
+        <p id="skewDescription3">This is the third skewed section.</p>
+      </div>
+    </section>
+  </body>
+</html>
+
+## 4.html
+
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+        margin: 0;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        max-width: 600px;
+        width: 100%;
+      }
+
+      .box {
+        padding: 20px;
+        border: 1px solid #dddddd;
+        font-size: 16px;
+        text-align: center;
+        background-color: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="box" id="book1">Box 1</div>
+      <div class="box" id="book2">Box 2</div>
+      <div class="box" id="book3">Box 3</div>
+      <div class="box" id="book4">Box 4</div>
+      <div class="box" id="book5">Box 5</div>
+      <div class="box" id="book6">Box 6</div>
+    </div>
+  </body>
+</html>
+
+## 5.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlap Block Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+
+      .container {
+          position: relative;
+          width: 300px;
+          height: 200px;
+      }
+
+      .block {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+      }
+
+      #block1 {
+          background-color: #3498db;
+          top: 0;
+          left: 0;
+      }
+
+      #block2 {
+          background-color: #e74c3c;
+          top: 50px;
+          left: 50px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block" id="block1">Block 1</div>
+        <div class="block" id="block2">Block 2</div>
+    </div>
+</body>
+</html>
+
+## 6.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Embed</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+
+      #video-container {
+          width: 80%;
+          max-width: 720px;
+          aspect-ratio: 16/9;
+          background-color: #000000;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      #video-container iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+      }
+    </style>
+</head>
+<body>
+    <div id="video">
+        <h1>Embed the YouTube video</h1>
+        <div id="video-container">
+            <iframe src="https://www.youtube.com/embed/R0OD5F-WO9A?si=kTRQpPNbK7nK3YQm" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
+
+## 7.html
+
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navbar</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        background-color: #333333;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links li {
+        display: inline;
+      }
+
+      .nav-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .nav-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links">
+        <li class="Home"><a href="#Home">Home</a></li>
+        <li class="About"><a href="#About">About</a></li>
+        <li class="Services"><a href="#Services">Services</a></li>
+        <li class="Contact"><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+## 8.html
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error-404</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #e74c3c;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .error-container {
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .error-header {
+        background-color: #c0392b;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .error-message {
+        padding: 20px;
+        font-size: 18px;
+      }
+
+      .back-home {
+        display: inline-block;
+        margin-top: 20px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+      }
+
+      .back-home:hover {
+        color: #f39c12;
+        border-color: #f39c12;
+      }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-header">404 - Page Not Found</div>
+        <div class="error-message">
+            We're sorry, but the page you requested could not be found.
+            <a href="#" class="back-home">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
